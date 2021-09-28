@@ -113,4 +113,25 @@ a {
 .header__form {
   margin-top: 30px;
 }
+
+.header__form .form__search {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.header__form .form__filters {
+  margin-top: 30px;
+  font-size: 32px;
+  color: #7C064D;
+  font-weight: 900;
+}
+
+.header__form .form__quality {
+  padding: 15px 0;
+  border: none;
+  background-color: transparent;
+}
 /*# sourceMappingURL=main.css.map */
