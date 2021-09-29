@@ -53,6 +53,7 @@
         margin-top: 30px;
         .form{
             &__search{
+                outline: none;
                 width: 100%;
                 padding:15px;
                 border:none;
@@ -81,6 +82,7 @@
                 font-weight: 900;
                 border-radius: 8px; 
                 margin-left: 200px;  
+                cursor: pointer;
             }
 
             

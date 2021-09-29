@@ -4,7 +4,7 @@ var homes = [
     //"Makler"
         "id": 1,
         "num": "001",
-        "title": "Кори Ниязова 1в2/4/6 Спец планировка (акай сити)",
+        "title": "Кори Ниязова 1в2/4/6 Спец планировка",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/47o50zh9ccdc1-UZ/image;s=1000x700",
         "type": ["Kvartira"],
         "price": 68000, 
@@ -74,7 +74,7 @@ var homes = [
     //"Makler"
         "id": 6,
         "num": "006",
-        "title": "Продается земля на Юнусабаде,Шахристанский, ор. Муза центр.",
+        "title": "Продается земля на Юнусабаде",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/s1e6dsn2chjn2-UZ/image;s=1000x700",
         "type": ["Hovli", "Yer uchastkalar",],
         "price": 14000, 
@@ -88,7 +88,7 @@ var homes = [
     //"Makler"
         "id": 7,
         "num": "007",
-        "title": "Аренда Срочно!! ТРЦ Некст 1/2/4 Новый Евролюкс Full Аппартамент.",
+        "title": "Аренда Срочно!! ТРЦ Некст 1/2/4",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/xtxdhc46ctf63-UZ/image;s=1000x700",
         "type": ["Kvartira", "Ijara", "Yangi uylar",],
         "price": 500, 
@@ -102,7 +102,7 @@ var homes = [
     //"Makler"
         "id": 8,
         "num": "008",
-        "title": "Продается срочно квартира на Nest one 2/17/51 57м2",
+        "title": "Продается срочно квартира на Nest one",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/47o50zh9ccdc1-UZ/image;s=1000x700",
         "type": ["Kvartira", "Yangi uylar",],
         "price": 97000, 
@@ -116,7 +116,7 @@ var homes = [
     //"Makler"
         "id": 9,
         "num": "009",
-        "title": "2х комн. кв. сдается в аренду. м. Х.Алимжана!!",
+        "title": "2х комн. кв. сдается в аренду.",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/ljrtkvtkjfuw2-UZ/image;s=1000x700",
         "type": ["Kvartira", "Ijara",],
         "price": 1500, 
@@ -130,7 +130,7 @@ var homes = [
     //"Makler"
         "id": 10,
         "num": "0010",
-        "title": "ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ Продажа Котеджи по доступной ЦЕНЕ в рассрочку",
+        "title": "ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ Продажа Котеджи",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/hqzxn9xn9mxw1-UZ/image;s=1000x700",
         "type": ["Hovli", "Yangi uylar"],
         "price": 140000, 
@@ -144,7 +144,7 @@ var homes = [
     //"Makler"
         "id": 11,
         "num": "0011",
-        "title": "Большой новый особняк в элитном районе (Никитина с 6.5 сотками)",
+        "title": "Большой новый особняк в элитном районе",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/x2nupym3y7en1-UZ/image;s=1000x700",
         "type": ["Hovli",],
         "price": 800000, 
@@ -158,7 +158,7 @@ var homes = [
     //"Makler"
         "id": 12,
         "num": "0012",
-        "title": "Срочно Продаю Квартиру На Чиланзаре 20 Квартале 1/3/4",
+        "title": "Срочно Продаю Квартиру На Чиланзаре 20",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/yo5ukolqc5gh3-UZ/image;s=1000x700",
         "type": ["Kvartira"],
         "price": 13300, 
@@ -172,7 +172,7 @@ var homes = [
     //"Makler"
         "id": 13,
         "num": "0013",
-        "title": "(КМ103091) Продается помещение в Мирзо-Улугбекском районе.",
+        "title": "Продается помещение",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/g9lpcw5h52ni-UZ/image;s=1000x700",
         "type": ["Kvartira"],
         "price": 1000000, 
@@ -215,7 +215,7 @@ var homes = [
     //"Makler"
         "id": 16,
         "num": "0016",
-        "title": "Закрытый бассейн. Зимняя, Уютная дача на природе. Чарвак, Бочка.",
+        "title": "Зимняя, Уютная дача на природе.",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/1ck6pwlphss12-UZ/image;s=1000x700",
         "type": ["Dacha", "Ijara"],
         "price": 120, 
@@ -243,7 +243,7 @@ var homes = [
     //"Makler"
         "id": 18,
         "num": "0018",
-        "title": "Кора Ниязова 1в2/4/6 Спец планировка (акай сити)",
+        "title": "Кора Ниязова 1в2/4/6 Спец планировка",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/47o50zh9ccdc1-UZ/image;s=1000x700",
         "type": ["Kvartira"],
         "price": 68000, 
@@ -257,7 +257,7 @@ var homes = [
     //"Makler"
         "id": 19,
         "num": "0019",
-        "title": "Продается квартира в Сергелях Новостройка",
+        "title": "Продается квартира в Сергелях",
         "img": "https://apollo-olx.cdnvideo.ru/v1/files/xkgweduc35i23-UZ/image;s=1000x700",
         "type": ["Hovli", "Kvartira", "Yangi uylar"],
         "price": 35000, 
