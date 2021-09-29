@@ -1,0 +1,88 @@
+main{
+    background-color: #FEF7DC;
+}
+.home{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        height: 250px;
+        width: 48%;
+        background-color: #fff;
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        &:first-child{
+            margin-top: 20px;
+        }
+        &:nth-child(2){
+            margin-top: 20px;
+        }
+    }
+    &__content{
+        flex-grow: 1;
+        margin-left: 10px;
+        padding: 10px;
+        position: relative;
+    }
+    &__title{
+        font-size: 24px;
+        margin-bottom: 10px;
+        width: 250px;
+        max-width: 100%;
+        font-weight: 900;
+    }
+    &__type{
+        font-size:20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    &__tu{
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    &__features{
+        margin-top: 15px;
+    }
+    &__rooms{
+        font-weight: 800;
+    }
+    &__area{
+        font-weight: 800;
+        margin-left: 30px;
+    }
+    &__about{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    &__like{
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        color: #aaa;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+    }
+    &__img{
+        width: 40%;
+        object-fit: cover;
+        position: relative;
+    }
+    &__price{
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: 700;
+        display: block;
+        
+    }
+    &__time{
+        margin-left: 30px;
+    }
+}

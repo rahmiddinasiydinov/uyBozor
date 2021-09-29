@@ -1,5 +1,8 @@
 .header{
+    color: #7C064D;
+
     background-color: #FFD31D;
+    padding-bottom: 30px;
     &__logo{
         display: flex;
         flex-grow: .5;
@@ -9,17 +12,18 @@
             margin-right: 30px;
             .logo-img{
                 width: 100px;
-               
+                transform: scale(2) translateY(10px);
+                
             }
         }
     }
     &__title{
         font-weight: 900;
         font-size: 48px;
-         color:#000ADB;
-                .bold{
-                    color:#7C064D;
-                }
+        color:#000ADB;
+        .bold{
+            color:#7C064D;
+        }
     }
     &__wrapper{
         padding-top: 30px;
@@ -60,13 +64,45 @@
                 font-size: 32px;
                 color: #7C064D;
                 font-weight: 900;
+                margin-bottom: 30px;
             }
             &__quality{
-                padding:15px 0;
-                border: none;
-                background-color: transparent;
+                padding: 10px 15px;
+                border: 2px solid #7C064D;
+                background-color: #fff;
+                border-radius: 8px;
+                
             }
+            &__submit{
+                padding:10px 30px;
+                border: 3px solid #7C064D;
+                background-color: #fff;
+                color: #7C064D;
+                font-weight: 900;
+                border-radius: 8px; 
+                margin-left: 200px;  
+            }
+
+            
         }
+        .home__type{
+            padding: 10px 15px;
+            border: 2px solid #7C064D;
+            background-color: #fff;
+            border-radius: 8px;   
+        }
+        .room__number{
+            padding: 10px 15px;
+            border: 2px solid #7C064D;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .label{
+            margin-left: 30px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
     }
     
 }
