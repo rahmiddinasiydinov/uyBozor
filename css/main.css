@@ -3,8 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,73 +31,48 @@ a {
     max-width: 100%;
   }
 }
-
 @media screen and (max-width: 500px) {
   .container {
     width: 376px;
     max-width: 100%;
   }
 }
-
 .header {
   background-color: #FFD31D;
 }
-
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: .5;
-      -ms-flex-positive: .5;
-          flex-grow: .5;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-grow: 0.5;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__logo-img {
   margin-right: 30px;
 }
-
 .header__logo-img .logo-img {
   width: 100px;
 }
-
 .header__title {
   font-weight: 900;
   font-size: 48px;
   color: #000ADB;
 }
-
 .header__title .bold {
   color: #7C064D;
 }
-
 .header__wrapper {
   padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__like {
   padding: 0;
   font-size: 50px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
   border: none;
   background-color: transparent;
 }
-
 .header__advert {
   background-color: #7C064D;
   border: none;
@@ -109,11 +83,9 @@ a {
   font-weight: 700;
   margin-left: 20px;
 }
-
 .header__form {
   margin-top: 30px;
 }
-
 .header__form .form__search {
   width: 100%;
   padding: 15px;
@@ -121,17 +93,14 @@ a {
   font-size: 20px;
   border-radius: 8px;
 }
-
 .header__form .form__filters {
   margin-top: 30px;
   font-size: 32px;
   color: #7C064D;
   font-weight: 900;
 }
-
 .header__form .form__quality {
   padding: 15px 0;
   border: none;
   background-color: transparent;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
