@@ -38,9 +38,9 @@ a {
   }
 }
 .header {
-  color: #7C064D;
-  background-color: #FFD31D;
-  padding-bottom: 30px;
+  color: #14279B;
+  background-color: #F6F6F6;
+  padding-bottom: 20px;
 }
 .header__logo {
   display: flex;
@@ -52,42 +52,47 @@ a {
   margin-right: 30px;
 }
 .header__logo-img .logo-img {
-  width: 100px;
-  transform: scale(2) translateY(10px);
+  width: 120px;
 }
 .header__title {
   font-weight: 900;
   font-size: 48px;
-  color: #000ADB;
+  color: #14279B;
 }
 .header__title .bold {
-  color: #7C064D;
+  color: #5C7AEA;
 }
 .header__wrapper {
-  padding-top: 30px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header__like {
   padding: 0;
-  font-size: 50px;
+  cursor: pointer;
   transform: translateY(10px);
   border: none;
   background-color: transparent;
+  color: #5C7AEA;
+}
+.header__like:hover {
+  color: red;
+  text-shadow: 5px 5px 15px red;
+  background-color: transparent;
 }
 .header__advert {
-  background-color: #7C064D;
+  background-color: #14279B;
   border: none;
   border-radius: 10px;
   padding: 15px 30px;
-  color: #FFD31D;
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
   margin-left: 20px;
 }
 .header__form {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .header__form .form__search {
   outline: none;
@@ -98,37 +103,37 @@ a {
   border-radius: 8px;
 }
 .header__form .form__filters {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 32px;
-  color: #7C064D;
+  color: #14279B;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .header__form .form__quality {
   padding: 10px 15px;
-  border: 2px solid #7C064D;
+  border: 2px solid #14279B;
   background-color: #fff;
   border-radius: 8px;
 }
 .header__form .form__submit {
   padding: 10px 30px;
-  border: 3px solid #7C064D;
+  border: 3px solid #14279B;
   background-color: #fff;
-  color: #7C064D;
+  color: #14279B;
   font-weight: 900;
   border-radius: 8px;
-  margin-left: 200px;
+  margin-left: 100px;
   cursor: pointer;
 }
 .header__form .home__type {
   padding: 10px 15px;
-  border: 2px solid #7C064D;
+  border: 2px solid #14279B;
   background-color: #fff;
   border-radius: 8px;
 }
 .header__form .room__number {
   padding: 10px 15px;
-  border: 2px solid #7C064D;
+  border: 2px solid #14279B;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -139,7 +144,7 @@ a {
 }
 
 main {
-  background-color: #FEF7DC;
+  background-color: #E6E6E6;
 }
 
 .home__list {

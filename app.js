@@ -16,7 +16,7 @@ function renderHomes(homesArr, element){
         selectElem('.home__rooms', cloneTemplate).textContent = "Xonalar soni: " + home.rooms;
         selectElem('.home__area', cloneTemplate).textContent = "Maydoni: " + home.area;
         selectElem('.home__price', cloneTemplate).textContent = "Narxi: " + home.price + "$";
-        // selectElem('.home__turi', cloneTemplate).textContent = home.type;
+        selectElem('.home__turi', cloneTemplate).textContent = home.type;
         selectElem('.home__time', cloneTemplate).textContent = normalizeDate(home.release_date);
         selectElem('.home__time', cloneTemplate).datetime = normalizeDate(home.release_date);
         selectElem('.films__btn', cloneTemplate);
@@ -24,4 +24,23 @@ function renderHomes(homesArr, element){
         element.appendChild(cloneTemplate);
     })
 }
-renderHomes(homes, elMenu);selectElem
+renderHomes(homes, elMenu);
+
+function renderTypes(typeArr, element){
+    let result = []
+    typeArr.forEach((home) =>{
+        home.type.forEach(type =>{
+            if(!result.includes(type)){
+                result.push(type);
+            }; 
+        });
+    });
+    result.forEach(type =>{
+        let newOption = createElem('option');
+        newOption.textContent = type;
+        newOption.value = type;
+        
+        element.appendChild(newOption);
+    });
+};
+renderTypes(homes, elTypeSelect);

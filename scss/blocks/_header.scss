@@ -1,8 +1,8 @@
 .header{
-    color: #7C064D;
+    color: #14279B;
 
-    background-color: #FFD31D;
-    padding-bottom: 30px;
+    background-color: #F6F6F6;
+    padding-bottom: 20px;
     &__logo{
         display: flex;
         flex-grow: .5;
@@ -11,8 +11,8 @@
         &-img{
             margin-right: 30px;
             .logo-img{
-                width: 100px;
-                transform: scale(2) translateY(10px);
+                width: 120px;
+                // transform: scale(2) translateY(10px);
                 
             }
         }
@@ -20,37 +20,44 @@
     &__title{
         font-weight: 900;
         font-size: 48px;
-        color:#000ADB;
+        color:#14279B;
         .bold{
-            color:#7C064D;
+            color:#5C7AEA;
         }
     }
     &__wrapper{
-        padding-top: 30px;
+        padding-top: 5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__like{
         padding: 0;
-        font-size: 50px;
+        // font-size: 50px;
+        cursor: pointer;
         transform: translateY(10px);
-        border:none;
+        border: none;
         background-color: transparent;
+        color:#5C7AEA;
+        &:hover{
+            color: red;
+        text-shadow: 5px 5px 15px  red;
+            background-color: transparent;
+        }
     }
     &__advert{
-        background-color: #7C064D;
+        background-color: #14279B;
         border:none;
         border-radius: 10px;
         padding: 15px 30px;
-        color:#FFD31D;
+        color: #fff;;
         font-size: 24px;
         font-weight: 700;
         margin-left: 20px;
         
     }
     &__form{
-        margin-top: 30px;
+        margin-top: 10px;
         .form{
             &__search{
                 outline: none;
@@ -61,27 +68,27 @@
                 border-radius: 8px;
             }
             &__filters{
-                margin-top: 30px;
+                margin-top: 10px;
                 font-size: 32px;
-                color: #7C064D;
+                color: #14279B;
                 font-weight: 900;
-                margin-bottom: 30px;
+                margin-bottom: 5px;
             }
             &__quality{
                 padding: 10px 15px;
-                border: 2px solid #7C064D;
+                border: 2px solid #14279B;
                 background-color: #fff;
                 border-radius: 8px;
                 
             }
             &__submit{
                 padding:10px 30px;
-                border: 3px solid #7C064D;
+                border: 3px solid #14279B;
                 background-color: #fff;
-                color: #7C064D;
+                color: #14279B;
                 font-weight: 900;
                 border-radius: 8px; 
-                margin-left: 200px;  
+                margin-left: 100px;  
                 cursor: pointer;
             }
 
@@ -89,13 +96,13 @@
         }
         .home__type{
             padding: 10px 15px;
-            border: 2px solid #7C064D;
+            border: 2px solid #14279B;
             background-color: #fff;
             border-radius: 8px;   
         }
         .room__number{
             padding: 10px 15px;
-            border: 2px solid #7C064D;
+            border: 2px solid #14279B;
             background-color: #fff;
             border-radius: 8px;
         }
