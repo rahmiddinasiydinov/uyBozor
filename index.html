@@ -8,163 +8,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-
-
+    
+    
 </head>
 <body>
-
-
     <header class="header">
-<div class="container">        <div class="header__wrapper">
-    <div class="header__logo">
-        <a href="about.html" class="header__logo-img"><img class='logo-img' src="./img/logouy.png" alt=""></a>
-        <h1 class="header__title"><span class="bold">Uy</span>Bozor</h1>
-    </div>
-<div class="header__items">
-    <button class="header__like"><i class="far fa-heart"></i></button>
-    <button class="header__advert">+ E'lon berish</button>
-</div>
-</div>
-<div class="links">
-    <a href="about.html" class="links__about">About the program</a>
-    <a href="developers.html" class="links__about">About developers</a>
-</div>
-<form action="" class="header__form">
-    <input type="search" class="form__search" placeholder="Search...">
-    <h3 class="form__filters">Filters</h3>
-    <select name="" id="" class="form__quality">
-        <option value="ch-e">Arzon-Qimmat</option>
-        <option value="e-ch">Qimmat-Arzon</option>
-        <option value="old-new">Eski-Yangi</option>
-        <option value="new-old">Yangi-Eski</option>
-        <option value="-old">Katta-Kichik</option>
-        <option value="new-old">Kichik-Katta</option>
-    </select>
-    <label for="type" class="label">Turi:</label>
-    <select name="" id="type" class="home__type">
-        <option value="All">All</option>
-        
-    </select>
-    <label class='label' for="room">Xonalar soni</label>
-    <select name="" id="room" class="room__number">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        
-    </select>
-    <button class="form__submit">Search</button>
-</form></div>
+        <div class="container">        
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="about.html" class="header__logo-img">
+                        <img class='logo-img' src="./img/nlogo.png" alt="">
+                    </a>
+                    <h1 class="header__title"><span class="bold">Uy</span>Bozor</h1>
+                </div>
+                <div class="header__items">
+                    <button class="header__like">
+                        <i class="far fa-heart fa-3x"></i>
+                    </button>
+                    <button class="header__advert"><span id="plus">+</span> E'lon berish</button>
+                </div>
+            </div>
+            <form action="" class="header__form">
+                <input type="search" class="form__search" placeholder="Search...">
+                <h3 class="form__filters">Filters</h3>
+                <select name="" id="" class="form__quality">
+                    <option value="All">All</option>
+                    <option value="ch-e">Arzon-Qimmat</option>
+                    <option value="e-ch">Qimmat-Arzon</option>
+                    <option value="old-new">Eski-Yangi</option>
+                    <option value="new-old">Yangi-Eski</option>
+                    <option value="big-small">Katta-Kichik</option>
+                    <option value="small-big">Kichik-Katta</option>
+                </select>
+                <label for="type" class="label">Turi: </label>
+                <select name="home__type" id="type" class="home__type">
+                    <option value="All">All</option>
+                </select>
+                <label class='label' for="room">Xonalar soni: </label>
+                <input type="number" id="room" class="room__number">
+                <!-- <select name="room__number" id="room" class="room__number">
+                    <option value="All">All</option>  
+                    <option value="All">0</option>  
+                    <option value="All">1</option>  
+                    <option value="All">2</option>  
+                    <option value="All">3</option>  
+                    <option value="All">4</option>  
+                    <option value="All">5</option>  
+                    <option value="All">6</option>  
+                    <option value="All">7</option>  
+                    <option value="All">8</option>  
+                </select> -->
+                <button type="submit" class="form__submit">Search</button>
+            </form>
+        </div>
     </header>
     <main>
         <section class="home">
-           <div class="container">
-                 
-            <ul class="home__list">
-
-                <li class="home__item">
-                    <img src="https://picsum.photos/200" alt="" class="home__img">
-                    <div class="home__content">
-                        <h2 class="home__title">Lorem, ipsum dolor.lorem ipsum dolor</h2>
-                        <span class="home__tur">dacha, ijara </span>
-                        <div class="home__features">
-                            <span class="home__rooms">Xonalar soni: 4</span>
-                            <span class="home__area">Maydoni: 6 sotix</span>
-                        </div>
-                        <span class="home__price">2500000 so'm</span>
-                        <div class="home__about">
-                            <span class="home__adress">Toshkent,Yunusobod 13 </span>
-                        <span class="home__time">12.09.2021</span>
-                        </div>
-                    </div>
-                    <button class="home__like"><i class="fas fa-heart"></i></button>
-                </li>
-                
-                <li class="home__item">
-                    <img src="https://picsum.photos/200" alt="" class="home__img">
-                    <div class="home__content">
-                        <h2 class="home__title">Lorem, ipsum dolor.lorem ipsum dolor</h2>
-                        <span class="home__tur">dacha, ijara </span>
-                        <div class="home__features">
-                            <span class="home__rooms">Xonalar soni: 4</span>
-                            <span class="home__area">Maydoni: 6 sotix</span>
-                        </div>
-                        <span class="home__price">2500000 so'm</span>
-                        <div class="home__about">
-                            <span class="home__adress">Toshkent,Yunusobod 13 </span>
-                        <span class="home__time">12.09.2021</span>
-                        </div>
-                    </div>
-                    <button class="home__like"><i class="fas fa-heart"></i></button>
-                </li>
-                
-                
-                <li class="home__item">
-                    <img src="https://picsum.photos/200" alt="" class="home__img">
-                    <div class="home__content">
-                        <h2 class="home__title">Lorem, ipsum dolor.lorem ipsum dolor</h2>
-                        <span class="home__tur">dacha, ijara </span>
-                        <div class="home__features">
-                            <span class="home__rooms">Xonalar soni: 4</span>
-                            <span class="home__area">Maydoni: 6 sotix</span>
-                        </div>
-                        <span class="home__price">2500000 so'm</span>
-                        <div class="home__about">
-                            <span class="home__adress">Toshkent,Yunusobod 13 </span>
-                        <span class="home__time">12.09.2021</span>
-                        </div>
-                    </div>
-                    <button class="home__like"><i class="fas fa-heart"></i></button>
-                </li>
-                
-                
-                <li class="home__item">
-                    <img src="https://picsum.photos/200" alt="" class="home__img">
-                    <div class="home__content">
-                        <h2 class="home__title">Lorem, ipsum dolor.lorem ipsum dolor</h2>
-                        <span class="home__tur">dacha, ijara </span>
-                        <div class="home__features">
-                            <span class="home__rooms">Xonalar soni: 4</span>
-                            <span class="home__area">Maydoni: 6 sotix</span>
-                        </div>
-                        <span class="home__price">2500000 so'm</span>
-                        <div class="home__about">
-                            <span class="home__adress">Toshkent,Yunusobod 13 </span>
-                        <span class="home__time">12.09.2021</span>
-                        </div>
-                    </div>
-                    <button class="home__like"><i class="fas fa-heart"></i></button>
-                </li>
-                
-                
-            </ul>
-           </div>
+            <div class="container">
+                <ul class="home__list">
+                    <template id="template">
+                        <li class="home__item">
+                            <img src="https://picsum.photos/200" alt="" class="home__img">
+                            <div class="home__content">
+                                <h2 class="home__title">Lorem, ipsum dolor.lorem ipsum dolor</h2>
+                                <ul class="home__turi"></ul>
+                                <div class="home__features">
+                                    <p class="home__rooms">Xonalar soni: 4</p>
+                                    <p class="home__area">Maydoni: 6 sotix</p>
+                                </div>
+                                <p class="home__price">2500000 so'm</p>
+                                <div class="home__about">
+                                    <!-- <span class="home__adress">Toshkent,Yunusobod 13 </span> -->
+                                    <time datetime="1632827972348" class="home__time">1632827972348</time>
+                                </div>
+                            </div>
+                            <button class="home__like"><i class="fas fa-heart"></i></button>
+                        </li>
+                    </template>
+                    
+                </ul>
+            </div>
         </section>
-        
     </main>
-    <template class='template'>
-
+    <!-- <template class='template'>
+        
         <li class="home__item">
             <img src="https://picsum.photos/200" alt="" class="home__img">
             <div class="home__content">
                 <h2 class="home__title">Lorem, ipsum dolor.lorem ipsum dolor</h2>
-                <span class="home__tur">dacha, ijara </span>
+                <p class="home__turi">dacha, ijara </p>
                 <div class="home__features">
-                    <span class="home__rooms">Xonalar soni: 4</span>
-                    <span class="home__area">Maydoni: 6 sotix</span>
+                    <p class="home__rooms">Xonalar soni: 4</p>
+                    <p class="home__area">Maydoni: 6 sotix</p>
                 </div>
-                <span class="home__price">2500000 so'm</span>
+                <p class="home__price">2500000 so'm</p>
                 <div class="home__about">
-                    <span class="home__adress">Toshkent,Yunusobod 13 </span>
-                <span class="home__time">12.09.2021</span>
+                    <p class="home__adress">Toshkent,Yunusobod 13 </p>
+                    <p class="home__time">12.09.2021</p>
                 </div>
             </div>
             <button class="home__like"><i class="fas fa-heart"></i></button>
         </li>
         
-            
-        </template>
+        
+    </template> -->
+    <script src="./util.js"></script>
+    <script src="./homes.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
