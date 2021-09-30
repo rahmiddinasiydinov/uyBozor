@@ -204,6 +204,111 @@ a {
   margin-left: 40px;
 }
 
+@media screen and (max-width: 500px) {
+  .header__logo-img {
+    margin-right: 20px;
+  }
+  .header__logo-img .logo-img {
+    width: 100px;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  .header__title {
+    font-size: 32px;
+  }
+  .header__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__advert {
+    background-color: #14279B;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .header__form {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header__form .form__search {
+    margin-top: 10px;
+  }
+  .header__form .form__filters {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #14279B;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  .header__form .form__quality {
+    padding: 10px 15px;
+    border: 2px solid #14279B;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .header__form .form__submit {
+    padding: 10px 30px;
+    border: 3px solid #14279B;
+    background-color: #fff;
+    color: #14279B;
+    font-weight: 900;
+    border-radius: 8px;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  .header__form .form__submit:hover {
+    -webkit-transform: translateY(-5px) scale(1.1);
+            transform: translateY(-5px) scale(1.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .header__form .home__type {
+    padding: 10px 15px;
+    border: 2px solid #14279B;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .header__form .room__number {
+    padding: 10px 15px;
+    border: 2px solid #14279B;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .header__form .label {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .links__about {
+    font-size: 20px;
+    color: #7C064D;
+    font-weight: 700;
+  }
+  .links__about:nth-child(2) {
+    margin-left: 40px;
+  }
+}
+
 main {
   background-color: #E6E6E6;
 }

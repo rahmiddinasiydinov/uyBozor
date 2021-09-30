@@ -242,6 +242,20 @@ likes.forEach(elem =>{
 //modal
 elHeaderLike.addEventListener('click',()=>{
     modal.classList.toggle('active__modal');
+
+   
+
+
+
+})
+modalExit.addEventListener('click', (elem)=>{
+    modal.classList.remove('active__modal')
+})
+
+const cloneTemplate = elTemplate.cloneNode(true)
+
+
+
 trash = modal.querySelectorAll('.trash')
     console.log(trash);
     trash.forEach((elem)=>{
@@ -270,20 +284,6 @@ trash = modal.querySelectorAll('.trash')
             renderLikes(likeContainer, modalList) 
         })
     })
-   
-
-
-
-})
-modalExit.addEventListener('click', (elem)=>{
-    modal.classList.remove('active__modal')
-})
-
-const cloneTemplate = elTemplate.cloneNode(true)
-
-
-
-
 
 
 
