@@ -106,3 +106,16 @@
     }
     
 }
+.links{
+    display: flex;
+    justify-content: flex-end;
+    &__about{
+        font-size: 20px;
+        color: #7C064D;
+        font-weight: 700;
+        &:nth-child(2){
+            margin-left: 40px;
+        }
+    }
+
+}

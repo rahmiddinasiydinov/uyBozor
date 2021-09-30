@@ -171,6 +171,25 @@ a {
   font-weight: 700;
 }
 
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.links__about {
+  font-size: 20px;
+  color: #7C064D;
+  font-weight: 700;
+}
+
+.links__about:nth-child(2) {
+  margin-left: 40px;
+}
+
 main {
   background-color: #FEF7DC;
 }
