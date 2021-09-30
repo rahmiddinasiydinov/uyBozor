@@ -11,7 +11,7 @@ main{
     &__item{
         position: relative;
         display: flex;
-        height: 250px;
+        height: 300px;
         width: 48%;
         background-color: #fff;
         margin: 10px;
@@ -69,7 +69,23 @@ main{
         background-color: transparent;
         border: none;
         font-size: 30px;
+        &:hover{
+            text-shadow: 0 0 10px red;
+         }
+        &:active{
+            animation: like .3s 1 alternate ease-in-out;
+            @keyframes like {
+               from{transform: scale(1);}
+               to{
+                   transform: scale(2);
+                   color: red;
+               }                
+            }
+        }
+        
     }
+     
+   
     &__img{
         width: 40%;
         object-fit: cover;
@@ -86,5 +102,33 @@ main{
         display: block;
         margin-top: 10px;
         margin-left: 30px;
+    }
+}
+ .active{
+        color:rgba(255, 0, 0,1);
+        text-shadow: 0 0 5px red;
+    }
+
+
+.trash{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    color: #aaa;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    &:hover{
+        text-shadow: 0 0 10px red;
+     }
+    &:active{
+        animation: like .3s 1 alternate ease-in-out;
+        @keyframes like {
+           from{transform: scale(1);}
+           to{
+               transform: scale(2);
+               color: red;
+           }                
+        }
     }
 }
