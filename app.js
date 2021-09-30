@@ -188,6 +188,96 @@ elForm.addEventListener('submit', (e) =>{
         })
     }
     elSearch.value = null;
-    // elRoomInput.value = null;
-    renderHomes(foundHomes, elMenu);
+    elRoomInput.value = null;
+    renderMovies(foundHomes, elMenu);
 })
+
+
+
+ // adding to likes
+let likeContainer = [];
+let likes = document.querySelectorAll('.home__like');
+likes.forEach(elem =>{
+    elem.addEventListener('click', ()=>{
+        
+        elem.classList.toggle('active');
+        console.log(elem.dataset.id);
+        console.log(elem.classList.contains('active'))
+        if(elem.classList.contains('active')){
+            homes.forEach(
+                el =>{
+                    if(el.id == elem.dataset.id){
+                        likeContainer.push(el);
+                    }
+                }
+            ); 
+           
+        }
+        else{
+            homes.forEach(
+                el =>{
+                    if(el.id == elem.dataset.id){
+                        likeContainer.forEach(like =>{
+                            if(like.id == el.id){
+                                let index = likeContainer.indexOf(like)
+                                likeContainer.splice(index,1)
+                            } 
+                        })
+                        
+                    }
+                }
+            );
+
+        }
+         renderLikes(likeContainer, modalList) 
+        }
+        )
+})
+
+//modal
+elHeaderLike.addEventListener('click',()=>{
+    modal.classList.toggle('active__modal');
+trash = modal.querySelectorAll('.trash')
+    console.log(trash);
+    trash.forEach((elem)=>{
+        elem.addEventListener('click' ,()=>{
+            console.log('hello')
+            homes.forEach(
+                el =>{
+                    if(el.id == elem.dataset.id){
+                        likeContainer.forEach(like =>{
+                            if(like.id == el.id){
+                                let index = likeContainer.indexOf(like)
+                                likeContainer.splice(index,1);
+                                
+
+                            } 
+                        })
+                        
+                    }
+                }
+            );
+            renderLikes(likeContainer, modalList) 
+        })
+    })
+   
+
+
+
+})
+modalExit.addEventListener('click', (elem)=>{
+    modal.classList.remove('active__modal')
+})
+
+const cloneTemplate = elTemplate.cloneNode(true)
+
+
+
+
+
+
+
+
+
+
+
