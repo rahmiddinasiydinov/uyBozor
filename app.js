@@ -3,7 +3,7 @@ const elForm = selectElem('.header__form');
 const elFilter = selectElem('.form__quality');
 const elSelect = selectElem('.home__type');
 const elRoomInput = selectElem('.room__number');
-const elSearch = selectElem('.form__submit');
+const elSearch = selectElem('.form__search');
 const elTemplate = selectElem('#template').content;
 const elHeaderLike = selectElem('.header__like');
 let modal = selectElem('.modal');
@@ -19,7 +19,7 @@ function renderHomes(homesArr, element){
         selectElem('.home__img', cloneTemplate).src = home.img;
         selectElem('.home__title', cloneTemplate).textContent = home.title;
         selectElem('.home__rooms', cloneTemplate).textContent = "Xonalar soni: " + home.rooms;
-        selectElem('.home__area', cloneTemplate).textContent = "Maydoni: " + home.area;
+        selectElem('.home__area', cloneTemplate).textContent = "Maydoni: " + home.area + "kv.m";
         selectElem('.home__price', cloneTemplate).textContent = "Narxi: " + home.price + " $";
         let elTypes = selectElem('.home__turi', cloneTemplate)
         home.type.forEach((tip) =>{
@@ -33,6 +33,10 @@ function renderHomes(homesArr, element){
         selectElem('.home__like', cloneTemplate).dataset.id = home.id
         
         element.appendChild(cloneTemplate);
+
+        // cloneTemplate.addEventListener('click', () =>{
+
+        // })
     })
 }
 renderHomes(homes, elMenu);
@@ -102,37 +106,39 @@ elForm.addEventListener('submit', (e) =>{
     const regex = new RegExp(inputValue, 'gi');
     const filteredHomes = homes.filter((home)=> home.title.match(regex));
 
-    const roomgex = new RegExp(roomValue, 'gi');
-    const filteredRooms = homes.filter((home)=> home.rooms.match(roomgex));
+    // const roomgex = new RegExp(roomValue, 'gi');
+    // const filteredRooms = homes.filter((home)=> home.rooms.match(roomgex));
     
     let foundHomes = [];
     
     if(selectValue === 'All'){
         foundHomes = filteredHomes;
     }else{
-        foundHomes = filteredHomes.filter(home => home.types.includes(selectValue));
+        foundHomes = filteredHomes.filter(home => home.type.includes(selectValue));
     }
-    if(selectValue === 'All'){
-        foundHomes = filteredRooms;
-    }else{
-        foundHomes = filteredRooms.filter(film => home.rooms.includes(roomValue));
-    }
+
+    // console.log(foundHomes)
+    // if(selectValue === 'All'){
+    //     foundHomes = filteredRooms;
+    // }else{
+    //     foundHomes = filteredRooms.filter(home => home.rooms.includes(roomValue));
+    // }
     
-    if(filterValue === 'A_Z'){
+    if(filterValue === 'ch-e'){
         foundHomes.sort((a, b) => {
-            if(a.title > b.title){
+            if(a.price > b.price){
                 return 1
-            }else if( a.title < b.title){
+            }else if( a.price < b.price){
                 return -1
             }else{
                 return 0
             } 
         })
-    }else if(filterValue === 'Z_A'){
+    }else if(filterValue === 'e-ch'){
         foundHomes.sort((a, b) => {
-            if(a.title > b.title){
+            if(a.price > b.price){
                 return -1
-            }else if( a.title < b.title){
+            }else if( a.price < b.price){
                 return 1
             }else{
                 return 0
@@ -160,97 +166,28 @@ elForm.addEventListener('submit', (e) =>{
             }
         })
     }
-    elSearch.value = null;
-    elRoomInput.value = null;
-    renderMovies(foundHomes, elMenu);
-})
-
-
-
- // adding to likes
-let likeContainer = [];
-let likes = document.querySelectorAll('.home__like');
-likes.forEach(elem =>{
-    elem.addEventListener('click', ()=>{
-        
-        elem.classList.toggle('active');
-        console.log(elem.dataset.id);
-        console.log(elem.classList.contains('active'))
-        if(elem.classList.contains('active')){
-            homes.forEach(
-                el =>{
-                    if(el.id == elem.dataset.id){
-                        likeContainer.push(el);
-                    }
-                }
-            ); 
-           
-        }
-        else{
-            homes.forEach(
-                el =>{
-                    if(el.id == elem.dataset.id){
-                        likeContainer.forEach(like =>{
-                            if(like.id == el.id){
-                                let index = likeContainer.indexOf(like)
-                                likeContainer.splice(index,1)
-                            } 
-                        })
-                        
-                    }
-                }
-            );
-
-        }
-         renderLikes(likeContainer, modalList) 
-        }
-        )
-})
-
-//modal
-elHeaderLike.addEventListener('click',()=>{
-    modal.classList.toggle('active__modal');
-trash = modal.querySelectorAll('.trash')
-    console.log(trash);
-    trash.forEach((elem)=>{
-        elem.addEventListener('click' ,()=>{
-            console.log('hello')
-            homes.forEach(
-                el =>{
-                    if(el.id == elem.dataset.id){
-                        likeContainer.forEach(like =>{
-                            if(like.id == el.id){
-                                let index = likeContainer.indexOf(like)
-                                likeContainer.splice(index,1);
-                                
-
-                            } 
-                        })
-                        
-                    }
-                }
-            );
-            renderLikes(likeContainer, modalList) 
+    if(filterValue === 'small-big'){
+        foundHomes.sort((a, b) => {
+            if(a.area > b.area){
+                return 1
+            }else if( a.area < b.area){
+                return -1
+            }else{
+                return 0
+            }
         })
-    })
-   
-
-
-
+    }else if(filterValue === 'big-small'){
+        foundHomes.sort((a, b) => {
+            if(a.area > b.area){
+                return -1
+            }else if( a.area < b.area){
+                return 1
+            }else{
+                return 0
+            }
+        })
+    }
+    elSearch.value = null;
+    // elRoomInput.value = null;
+    renderHomes(foundHomes, elMenu);
 })
-modalExit.addEventListener('click', (elem)=>{
-    modal.classList.remove('active__modal')
-})
-
-const cloneTemplate = elTemplate.cloneNode(true)
-
-
-
-
-
-
-
-
-
-
-
