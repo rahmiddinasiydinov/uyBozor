@@ -133,6 +133,108 @@ main{
     }
 }
 
-@media screen and (max) {
+@media screen and (max-width:500px) {
+.home{
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item{
+            width: 100%;
+
+        }
+        &__content{
+            width: 30%;
+        }
+        &__title{
+            font-size: 18px;
+            margin-bottom: 10px;
+            max-width: 100%;
+            font-weight: 900;
+        }
+        &__type{
+            font-size:20px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        &__turi{
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        &__features{
+            margin-top: 15px;
+        }
+        &__rooms{
+            font-weight: 800;
+        }
+        &__area{
+            font-weight: 800;
+            margin-left: 30px;
+        }
+        &__about{
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+        &__like{
+            position: absolute;
+            right: 30px;
+            top: unset;
+            bottom: 15px;
+            color: #aaa;
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            &:hover{
+                text-shadow: 0 0 10px red;
+             }
+            &:active{
+                animation: like .3s 1 alternate ease-in-out;
+                @keyframes like {
+                   from{transform: scale(1);}
+                   to{
+                       transform: scale(2);
+                       color: red;
+                   }                
+                }
+            }
+            
+        }
+         
+       
+        &__img{
+            width: 40%;
+            object-fit: cover;
+            position: relative;
+        }
+        &__price{
+            margin-top: 15px;
+            font-size: 25px;
+            font-weight: 700;
+            display: block;
+            
+        }
+        &__time{
+            display: block;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+    }
+     .active{
+            color:rgba(255, 0, 0,1);
+            text-shadow: 0 0 5px red;
+        }
     
+    
+    .trash{
+    max-width: 90%;
+    position: absolute;
+    right: 30px;
+    top: unset;
+    bottom: 15px;
+    color: #aaa;
+
+    }  
 }
