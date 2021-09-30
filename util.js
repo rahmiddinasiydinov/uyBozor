@@ -1,4 +1,4 @@
-const selectElem = (elem, parent = document) => parent.querySelector(elem);
+const selectElem = (elem, parent = document) => parent.querySelector(elem, parent);
 const createElem = (elem) => document.createElement(elem);
 
 function normalizeDate(time){

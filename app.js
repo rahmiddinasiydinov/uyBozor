@@ -97,7 +97,6 @@ renderTypes(homes, elSelect);
 
 elForm.addEventListener('submit', (e) =>{
     e.preventDefault();
-    
     const inputValue = elSearch.value.trim();
     const selectValue = elSelect.value.trim();
     const filterValue = elFilter.value.trim();
@@ -187,9 +186,15 @@ elForm.addEventListener('submit', (e) =>{
             }
         })
     }
+
+    let lastFilter = [];
+    lastFilter = foundHomes.filter((elem) =>elem.rooms == roomValue)
+    if(roomValue == 0){
+        lastFilter = foundHomes
+    }
     elSearch.value = null;
     elRoomInput.value = null;
-    renderMovies(foundHomes, elMenu);
+    renderHomes(lastFilter, elMenu);
 })
 
 
@@ -249,6 +254,11 @@ trash = modal.querySelectorAll('.trash')
                             if(like.id == el.id){
                                 let index = likeContainer.indexOf(like)
                                 likeContainer.splice(index,1);
+                                likes.forEach(like =>{
+                                    if(like.dataset.id ==elem.dataset.id ){
+                                        like.classList.remove('active');
+                                    }
+                                })
                                 
 
                             } 

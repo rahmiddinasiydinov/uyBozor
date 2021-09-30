@@ -158,6 +158,13 @@ a {
   cursor: pointer;
 }
 
+.header__form .form__submit:hover {
+  -webkit-transform: translateY(-5px) scale(1.1);
+          transform: translateY(-5px) scale(1.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .header__form .home__type {
   padding: 10px 15px;
   border: 2px solid #14279B;
