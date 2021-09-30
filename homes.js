@@ -10,7 +10,7 @@ var homes = [
         "price": 68000, 
         "rooms": 2,   
         "release_date": 1632827972348, 
-        "area": "60 m.kv",
+        "area": 60,
         "overview": "Kvartirada bor: Internet, Telefon, Muzlatkich, Televizor, Konditsioner, Kabelli TV, Kir yuvish mashinasi, Oshxona, Balkon",
         },
     {
@@ -24,7 +24,7 @@ var homes = [
         "price": 125000, 
         "rooms": 3,   
         "release_date": 1632827972948,
-        "area": "75 m.kv",
+        "area": 75,
         "overview": "Kvartirada bor: Muzlatkich, Televizor, Konditsioner, Kir yuvish mashinasi, Oshxona, Balkon",
         },
     {
@@ -38,7 +38,7 @@ var homes = [
         "price": 79999, 
         "rooms": 5,   
         "release_date": 1632825972348,
-        "area": "200 m.kv",
+        "area": 200,
         "overview": "Uyda / Uchastkada bor: Ertoʻla, omborcha, Garaj, Maishiy texnika, Kanalizatsiya, Tomorqa",
         },
     {
@@ -52,7 +52,7 @@ var homes = [
         "price": 350, 
         "rooms": 3,   
         "release_date": 1652827972348,
-        "area": "78 m.kv",
+        "area": 78,
         "overview": "Kvartirada bor: Telefon, Muzlatkich, Televizor, Konditsioner, Kabelli TV, Oshxona, Balkon",
         },
     {
@@ -66,7 +66,7 @@ var homes = [
         "price": 49000, 
         "rooms": 4,   
         "release_date": 1632427972348,
-        "area": "200 m.kv",
+        "area": 200,
         "overview": "Kvartirada bor: Muzlatkich, Televizor, Konditsioner, Kabelli TV, Kir yuvish mashinasi, Oshxona",
         },
     {
@@ -80,7 +80,7 @@ var homes = [
         "price": 14000, 
         "rooms": 0,   
         "release_date": 1632823972348,
-        "area": "500 m.kv",
+        "area": 500,
         "overview": "Kommunikatsiyalar: Elektr quvvati, Suv, Gaz, Isitish tizimi, Kanalizatsiya, Internet, Telefon",
         },
     {
@@ -94,7 +94,7 @@ var homes = [
         "price": 500, 
         "rooms": 1,   
         "release_date": 1632227972348,
-        "area": "50 m.kv",
+        "area": 50,
         "overview": "Аренда Срочно!! ТРЦ Некст 1/2/4 Новый Евролюкс Full Hi-Tech Аппартамент Цена: 500$",
         },
     {
@@ -108,7 +108,7 @@ var homes = [
         "price": 97000, 
         "rooms": 2,   
         "release_date": 1632627972348,
-        "area": "57 m.kv",
+        "area": 57,
         "overview": "Yaqinida joylashgan: Kasalxona, poliklinika, Bolalar maydonchasi, Bolalar bogʻchasi, Bekatlar, Park, yashil zona, Koʻngilochar muassasalar, Restoran, kafelar, turargoh, Supermarket, doʻkonlar, Maktab",
         },
     {
@@ -122,7 +122,7 @@ var homes = [
         "price": 1500, 
         "rooms": 2,   
         "release_date": 1632827572348,
-        "area": "70 m.kv",
+        "area": 70,
         "overview": "Internet, Telefon, Muzlatkich, Televizor, Konditsioner, Kabelli TV, Kir yuvish mashinasi, Oshxona",
         },
     {
@@ -136,7 +136,7 @@ var homes = [
         "price": 140000, 
         "rooms": 3,   
         "release_date": 1632427972348,
-        "area": "209 m.kv",
+        "area": 209,
         "overview": "Связь Aloqa uchun +99890 928 09 88 отдела продаж Расположение/Manzil Ташкент, Зангиатинский район, улица Хамжихат  Адрес главного офиса отдела продаж, где вам дадут полную консультацию по всем интересующим вас вопросам: Ташкент, Ц1, улица Махтумкули, 48.",
         },
     {
@@ -150,7 +150,7 @@ var homes = [
         "price": 800000, 
         "rooms": 7,   
         "release_date": 1632827972348,
-        "area": "1000 m.kv",
+        "area": 1000,
         "overview": "Благоустройство дома: электричество, отопление, газ, водопровод +998908083663",
         },
     {
@@ -164,7 +164,7 @@ var homes = [
         "price": 13300, 
         "rooms": 1,   
         "release_date": 1632127972348,
-        "area": "19 m.kv",
+        "area": 19,
         "overview": "#Район - Чиланзар, 20 Возле Мечети Илон Ота Бывшее общежитие 1/3/4 , площадь 19 кв м² Внутри газовая плита Цена 13.000 $",
         },
     {
@@ -178,7 +178,7 @@ var homes = [
         "price": 1000000, 
         "rooms": 1,   
         "release_date": 1632857952348,
-        "area": "1000 m.kv",
+        "area": 1000,
         "overview": "Koʻchmas mulk turi: Do’konlar/butiklar, Salonlar, Ofislar, Erkin maqsaddagi xona-joylar, Binoning bir qismi, Boshqa",
         },
     {
@@ -192,7 +192,7 @@ var homes = [
         "price": 170, 
         "rooms": 1,   
         "release_date": 1631427972348,
-        "area": "30 m.kv",
+        "area": 30,
         "overview": "аренда квартира Район - мирзо Улугбек  Ориентир - Мирзо Улугбекская налоговая, кательная",
         },
     {
@@ -207,7 +207,7 @@ var homes = [
         "rooms": 5,   
         "release_date": 1632827792348,
 
-        "area": "800 m.kv",
+        "area": 800,
         "overview": "Бассейн зимний с обагревом10х4, сауна финский, 3 спальни, всего 12 койка. Летный басейн 12х6м. Сони плейстешн 4, караоке, настольный теннис, настольный футбол, и другие условии есть.",
         },
     {
@@ -221,7 +221,7 @@ var homes = [
         "price": 120, 
         "rooms": 8,   
         "release_date": 1631417972348,
-        "area": "1400 m.kv",
+        "area": 1400,
         "overview": "Суббота и Воскресенье по 1500,000 Зимняя дача со всеми домашними удобствами только для вас и для вашей семьи.",
         },
     {
@@ -235,7 +235,7 @@ var homes = [
         "price": 70000, 
         "rooms": 6,   
         "release_date": 1632827972348,
-        "area": "400 m.kv",
+        "area": 400,
         "overview": "Зудлик билан ЯНГИ куриб битказилган ховли уй сотилади, яшаш учун хамма шароитлари бор 4 соток, 6 хона, ошхона, алохида ванна, хаммом, хожатхона Газ, сув, свет 4 фасл муаммосиз Уй ичлари кишда иссик, ёзда салкин Уй мебель ва жихозлари билан сотилади.",
         },
     {
@@ -249,7 +249,7 @@ var homes = [
         "price": 68000, 
         "rooms": 2,   
         "release_date": 1632827972348,
-        "area": "60 m.kv",
+        "area": 60,
         "overview": "Kvartirada bor: Internet, Telefon, Muzlatkich, Televizor, Konditsioner, Kabelli TV, Kir yuvish mashinasi, Oshxona, Balkon",
         },
     {
@@ -263,7 +263,7 @@ var homes = [
         "price": 35000, 
         "rooms": 3,   
         "release_date": 1632827279348,
-        "area": "77 m.kv",
+        "area": 77,
         "overview": "Продается квартира в Сергелях на 2ом этаже+мансарда. Квартира двухэтажная. На 1ом этаже есть перегородки(кухня,1комната и ванная),на мансарде перегородок нет. можно сделать общее 3 комнаты,2 ванные. Дом расположен в элитной махалле рядом с Корзинкой,РОВД, Хокимиатом. Рядом в садиком Мерри Поппинс. Вся инфраструктура в шаговой доступности Супер вариант для проживания . Квартира своя. Срочно. Ключи в день оформления.",
         },
     {
@@ -277,7 +277,7 @@ var homes = [
         "price": 40000, 
         "rooms": 5,   
         "release_date": 1632827972348,
-        "area": "200 m.kv",
+        "area": 200,
         "overview": "Янги участка ремонти бн ярим план эски машина бозор ёнида",
         },
     ]
