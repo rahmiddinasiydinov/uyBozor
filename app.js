@@ -45,34 +45,6 @@ renderHomes(homes, elMenu);
 
 //render for like
 
-function renderLikes(homesArr, element){
-    element.innerHTML = null;
-    homesArr.forEach((home) =>{
-        const cloneTemplate = elTemplate.cloneNode(true);
-        
-        selectElem('.home__img', cloneTemplate).src = home.img;
-        selectElem('.home__title', cloneTemplate).textContent = home.title;
-        selectElem('.home__rooms', cloneTemplate).textContent = "Xonalar soni: " + home.rooms;
-        selectElem('.home__area', cloneTemplate).textContent = "Maydoni: " + home.area;
-        selectElem('.home__price', cloneTemplate).textContent = "Narxi: " + home.price + " $";
-        let elTypes = selectElem('.home__turi', cloneTemplate)
-        home.type.forEach((tip) =>{
-            let newLi = createElem('li');
-            newLi.textContent = tip;
-            elTypes.appendChild(newLi);
-        })
-        selectElem('.home__time', cloneTemplate).textContent = normalizeDate(home.release_date);
-        selectElem('.home__time', cloneTemplate).datetime = normalizeDate(home.release_date);
-        selectElem('.films__btn', cloneTemplate);
-        selectElem('.home__like', cloneTemplate).dataset.id = home.id
-        selectElem('.home__like',cloneTemplate).innerHTML='<i class="fas fa-trash"></i>' ;
-        selectElem('.home__like',cloneTemplate).classList = ('trash');
-        
-        element.appendChild(cloneTemplate);
-    })
-}
-
-
 
 function renderTypes(typeArr, element){
     let result = []
@@ -234,15 +206,36 @@ likes.forEach(elem =>{
             );
 
         }
-         renderLikes(likeContainer, modalList) 
+         
         }
         )
 })
-
 //modal
-elHeaderLike.addEventListener('click',()=>{
-    modal.classList.toggle('active__modal');
-trash = modal.querySelectorAll('.trash')
+
+function renderLikes(homesArr, element){
+    element.innerHTML = null;
+    homesArr.forEach((home) =>{
+        const cloneTemplate = elTemplate.cloneNode(true);
+        
+        selectElem('.home__img', cloneTemplate).src = home.img;
+        selectElem('.home__title', cloneTemplate).textContent = home.title;
+        selectElem('.home__rooms', cloneTemplate).textContent = "Xonalar soni: " + home.rooms;
+        selectElem('.home__area', cloneTemplate).textContent = "Maydoni: " + home.area;
+        selectElem('.home__price', cloneTemplate).textContent = "Narxi: " + home.price + " $";
+        let elTypes = selectElem('.home__turi', cloneTemplate)
+        home.type.forEach((tip) =>{
+            let newLi = createElem('li');
+            newLi.textContent = tip;
+            elTypes.appendChild(newLi);
+        })
+        selectElem('.home__time', cloneTemplate).textContent = normalizeDate(home.release_date);
+        selectElem('.home__time', cloneTemplate).datetime = normalizeDate(home.release_date);
+        selectElem('.films__btn', cloneTemplate);
+        selectElem('.home__like', cloneTemplate).dataset.id = home.id
+        selectElem('.home__like',cloneTemplate).innerHTML='<i class="fas fa-trash"></i>' ;
+        selectElem('.home__like',cloneTemplate).classList = ('trash');
+        element.appendChild(cloneTemplate);
+        trash = modal.querySelectorAll('.trash')
     console.log(trash);
     trash.forEach((elem)=>{
         elem.addEventListener('click' ,()=>{
@@ -266,11 +259,23 @@ trash = modal.querySelectorAll('.trash')
                         
                     }
                 }
-            );
-            renderLikes(likeContainer, modalList) 
+            ); 
+            renderLikes(likeContainer, modalList)
         })
+        
     })
    
+
+    })
+    
+}
+
+
+
+elHeaderLike.addEventListener('click',()=>{
+    modal.classList.toggle('active__modal');
+    renderLikes(likeContainer, modalList)
+
 
 
 
